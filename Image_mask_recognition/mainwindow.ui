@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="BQGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>800</width>
+      <height>500</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="view">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>10</y>
+      <width>480</width>
+      <height>820</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>3904</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="view_tab1">
+     <attribute name="title">
+      <string>二维图形</string>
+     </attribute>
+     <widget class="QTableWidget" name="view_table">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>480</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>3900</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="result">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>280</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="result_tab1">
+     <attribute name="title">
+      <string>检测结果</string>
+     </attribute>
+     <widget class="QTableWidget" name="result_table">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>280</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="data">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>800</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="data_tab1">
+     <attribute name="title">
+      <string>数据保存</string>
+     </attribute>
+     <widget class="BTableWidget" name="data_table">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>800</width>
+        <height>290</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="quality">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>520</y>
+      <width>280</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="result_tab1_2">
+     <attribute name="title">
+      <string>质检分类</string>
+     </attribute>
+     <widget class="QTableWidget" name="quality_table">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>280</width>
+        <height>290</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_load"/>
+    <addaction name="action_save"/>
+    <addaction name="action_screenshot"/>
+   </widget>
+   <widget class="QMenu" name="menu_camera">
+    <property name="title">
+     <string>相机</string>
+    </property>
+    <addaction name="action_camera_setting"/>
+    <addaction name="action_camera_calibration"/>
+   </widget>
+   <widget class="QMenu" name="menu_shifter">
+    <property name="title">
+     <string>移位器</string>
+    </property>
+    <addaction name="action_shifter_setting"/>
+    <addaction name="action_shifter_calibration"/>
+   </widget>
+   <widget class="QMenu" name="menu_language">
+    <property name="title">
+     <string>语言</string>
+    </property>
+    <addaction name="action_chinese"/>
+    <addaction name="action_english"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_camera"/>
+   <addaction name="menu_shifter"/>
+   <addaction name="menu_language"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_calculate"/>
+   <addaction name="action_analysis"/>
+   <addaction name="action_Loopcheck"/>
+   <addaction name="separator"/>
+   <addaction name="action_setting"/>
+   <addaction name="action_camera_aim"/>
+   <addaction name="action_download"/>
+   <addaction name="action_get"/>
+   <addaction name="separator"/>
+   <addaction name="action_Piston"/>
+   <addaction name="action_Tilt"/>
+   <addaction name="action_Power"/>
+   <addaction name="action_Ast"/>
+   <addaction name="action_Coma"/>
+   <addaction name="action_Spherical"/>
+   <addaction name="separator"/>
+   <addaction name="action_Company"/>
+   <addaction name="separator"/>
+   <addaction name="action_lock"/>
+  </widget>
+  <action name="action_calculate">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Graph.png</normaloff>:/images/Graph.png</iconset>
+   </property>
+   <property name="text">
+    <string>计算</string>
+   </property>
+   <property name="toolTip">
+    <string>计算</string>
+   </property>
+  </action>
+  <action name="action_lock">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Lock.png</normaloff>:/images/Lock.png</iconset>
+   </property>
+   <property name="text">
+    <string>锁定</string>
+   </property>
+   <property name="toolTip">
+    <string>锁定</string>
+   </property>
+  </action>
+  <action name="action_camera_setting">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Gear.png</normaloff>:/images/Gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_camera_calibration">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Coding.png</normaloff>:/images/Coding.png</iconset>
+   </property>
+   <property name="text">
+    <string>标定</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_shifter_setting">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Gear.png</normaloff>:/images/Gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_shifter_calibration">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Coding.png</normaloff>:/images/Coding.png</iconset>
+   </property>
+   <property name="text">
+    <string>标定</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_chinese">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Chinese.png</normaloff>:/images/Chinese.png</iconset>
+   </property>
+   <property name="text">
+    <string>中文</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_english">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/English.png</normaloff>:/images/English.png</iconset>
+   </property>
+   <property name="text">
+    <string>英文</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Piston">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Piston</string>
+   </property>
+  </action>
+  <action name="action_Tilt">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tilt</string>
+   </property>
+  </action>
+  <action name="action_Power">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Power</string>
+   </property>
+  </action>
+  <action name="action_Ast">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Ast</string>
+   </property>
+  </action>
+  <action name="action_Coma">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Coma</string>
+   </property>
+  </action>
+  <action name="action_Spherical">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Spherical</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Save.png</normaloff>:/images/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_analysis">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Pencil.png</normaloff>:/images/Pencil.png</iconset>
+   </property>
+   <property name="text">
+    <string>分析</string>
+   </property>
+  </action>
+  <action name="action_load">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Folder.png</normaloff>:/images/Folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>加载</string>
+   </property>
+  </action>
+  <action name="action_setting">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Gear.png</normaloff>:/images/Gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_screenshot">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Screenshot.png</normaloff>:/images/Screenshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>截图</string>
+   </property>
+   <property name="toolTip">
+    <string>截图</string>
+   </property>
+  </action>
+  <action name="action_download">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/SaveMask.png</normaloff>:/images/SaveMask.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_get">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/OpenMask.png</normaloff>:/images/OpenMask.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_camera_aim">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Calibration.png</normaloff>:/images/Calibration.png</iconset>
+   </property>
+   <property name="text">
+    <string>对准</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Company">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>λ@ 632.8 nm</string>
+   </property>
+   <property name="toolTip">
+    <string>Company</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="action_Loopcheck">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/LoopCalibration.png</normaloff>:/images/LoopCalibration.png</iconset>
+   </property>
+   <property name="text">
+    <string>循环检测</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BQGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>bqgraphicsview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>btablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

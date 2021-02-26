@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Coding.png</file>
+        <file>images/Company_Logo.bmp</file>
+        <file>images/Eye.png</file>
+        <file>images/Gear.png</file>
+        <file>images/Graph.png</file>
+        <file>images/Lock.png</file>
+        <file>images/Calibration.png</file>
+        <file>images/Chinese.png</file>
+        <file>images/English.png</file>
+        <file>images/Chamfer.png</file>
+        <file>images/Circle.png</file>
+        <file>images/Concentric_Circle.png</file>
+        <file>images/Ellipse.png</file>
+        <file>images/Pill.png</file>
+        <file>images/Polygon.png</file>
+        <file>images/Rectangle.png</file>
+        <file>images/Square.png</file>
+        <file>images/Change.png</file>
+        <file>images/Clear.png</file>
+        <file>images/Folder.png</file>
+        <file>images/Pencil.png</file>
+        <file>images/Delete.png</file>
+        <file>images/Dot.png</file>
+        <file>images/Screenshot.png</file>
+        <file>images/Enlarge.png</file>
+        <file>images/Locked.png</file>
+        <file>images/Unlock.png</file>
+        <file>images/LoopCalibration.png</file>
+        <file>images/StopLoop.png</file>
+        <file>images/1228702.png</file>
+        <file>images/1228697.png</file>
+        <file>images/OpenMask.png</file>
+        <file>images/SaveMask.png</file>
+        <file>images/Save.png</file>
+        <file>images/unit.png</file>
+    </qresource>
+</RCC>

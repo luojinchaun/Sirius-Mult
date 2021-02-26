@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>source/strings-C.json</file>
+        <file>source/strings-E.json</file>
+    </qresource>
+</RCC>
