@@ -26,6 +26,7 @@ Unit_setting_dialog::Unit_setting_dialog(QString title, QString name, int type, 
 
     ui->sureBtn->setText(name);
     ui->comboBox->setCurrentIndex(type);
+
     switch (type)
     {
     case 0: ui->doubleSpinBox->setValue(value); break;

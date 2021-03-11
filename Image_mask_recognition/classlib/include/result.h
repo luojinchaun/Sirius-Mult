@@ -541,7 +541,7 @@ public:
 	/**
 	* @brief ParallelTheta
 	* @param paralleltheta unit: s
-	* @param tilt unit: um
+	* @param fringes unit: fr
 	* @param refractiveindex
 	* @param diameter unit: mm
 	*/
@@ -549,7 +549,8 @@ public:
 		float tilt,
 		float refractiveindex,
 		float diameter) {
-		paralleltheta = 206.246f * tilt / diameter / (refractiveindex - 1.0f);
+		paralleltheta = 206.246f *0.6328* tilt / diameter / (refractiveindex - 1.0f);
+		//paralleltheta = 0.206246f * 632.8f *fringes / diameter / (2*refractiveindex );//菲索型是2*n，泰曼型是2*（n-1）。详见论文：《平板玻璃的平行度快速检测研究》
 	}
 
 private:

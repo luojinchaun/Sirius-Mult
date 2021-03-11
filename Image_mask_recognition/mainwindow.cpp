@@ -125,7 +125,7 @@ void MainWindow::initData()
 void MainWindow::initView()
 {
     qDebug() << "initView !";
-    setWindowTitle("Sirius Mult 3.1.2");
+    setWindowTitle("Sirius Mult 3.1.3");
     setMinimumSize(1320, 580);
 
     ui->action_Piston->setChecked(GlobalValue::zer_pis == 1);
@@ -1076,7 +1076,7 @@ void MainWindow::createDefaultConfig()
         settings.setValue("parameter/slopeRemoveSize", 1);      // 去毛刺阈值像素数
         settings.setValue("parameter/slopeThresh", 6);          // 去毛刺阈值
         settings.setValue("parameter/remove_residual", 1);      // 去残差
-        settings.setValue("parameter/refractive_index", 1.5);   // 折射率，计算ttv时要用
+        settings.setValue("parameter/refractive_index", 1.5);   // 折射率，计算ttv时要用    
     }
 
     QString parameter = "parameter.ini";
@@ -1995,8 +1995,11 @@ void MainWindow::modifyConfig()
         m_algorithmList.at(i)->configParams.calcResultInputParams.testWavelength = GlobalValue::par_t_w;
         m_algorithmList.at(i)->configParams.calcResultInputParams.ISOWavelength = GlobalValue::par_i_w;
         m_algorithmList.at(i)->configParams.calcResultInputParams.disPlayWavelength = GlobalValue::par_t_w;
-        m_algorithmList.at(i)->configParams.calcResultInputParams.scaleFactorForHoleType = 0.5;//Pro版本为0.5，默认值为1
+        m_algorithmList.at(i)->configParams.calcResultInputParams.scaleFactorForHoleType =1;//默认写为1
         m_algorithmList.at(i)->configParams.calcResultInputParams.unitType = (UNIT_TYPE)(GlobalValue::com_unit);//最后两项为新加入的
+
+
+
     }
 
     QTime stopTime = QTime::currentTime();

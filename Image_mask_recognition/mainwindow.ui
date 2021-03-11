@@ -553,7 +553,7 @@
   </action>
   <action name="action_Company">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>λ@ 632.8 nm</string>

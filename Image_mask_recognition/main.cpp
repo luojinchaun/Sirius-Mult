@@ -63,10 +63,10 @@ int main(int argc, char *argv[])
 
     //******************************************************************************************************************
 
-    if(readstring == "Sirius Mult 3.1.2")//
+    if(readstring == "Sirius Mult 3.1.3")//
     {
         // 若能够读取到共享内存中的数据，则客户端已开启，不能再开启客户端
-        HWND hwnd = FindWindow(NULL, L"Sirius Mult 3.1.2");
+        HWND hwnd = FindWindow(NULL, L"Sirius Mult 3.1.3");
         QWindow* window = QWindow::fromWinId((WId)hwnd);
         window->showNormal();
         exit(0);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
         key2 = "Sirius Mult";                                           // 确定共享内存的密匙
         smem.setKey(key2);                                              // 设置访问标识
         if(smem.isAttached()) smem.detach();                            // 判断是否已经连接到共享内存块，如果是的话，就先分离
-        sharedstring = "Sirius Mult 3.1.2";                             // 确定共享的数据
+        sharedstring = "Sirius Mult 3.1.3";                             // 确定共享的数据
         buffer2.open(QBuffer::ReadWrite);                               // 设置读取模式，打开缓冲区
         qdsm << sharedstring;                                           // 输入共享字符串到数据流，缓冲区就会得到数据的大小
         int size = buffer2.size();                                      // 获得字节大小
